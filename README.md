@@ -30,7 +30,7 @@ By declaring data member(variable) as private we can achieve data hiding
 ![image](https://user-images.githubusercontent.com/67812755/116021747-6b2e3f00-a666-11eb-9418-35647f711d4f.png)
 
 The main advantage of data-hiding is Security 
-Note: It is highly recommed data member(variable) as private
+Note: It is highly recommended data member(variable) as private
 
 ### Abstraction
 Hiding internal implementation and just highlight want we are offering is the concept of abstraction.
@@ -94,3 +94,31 @@ Example 2:
 
 
 No class are tighly encapsulated
+
+
+## IS-A Relationship
+
+It's also known as inheritance. The main advantage of IS-A-Relationship is code resuability by using extends keyword we cam implement Is-A-Relationship.
+
+
+![Blank diagram (7)](https://user-images.githubusercontent.com/67812755/116337855-6d280780-a7f8-11eb-80a3-499ab2aba3f1.png)
+
+
+**Conclusion**
+
+1. Whathever method parents has by default available to the child and hence child reference we can call both parent and child class methods.
+
+2. Whathever method child has not availae to the parent and hence parents reference we can't class child specific method.
+
+3. Parents reference can be used to hold child object but by using that refernce we can't class child specific method. But we can call the method present in Parent class.
+
+4. Parent reference can be used to hold child object but child refernce can't be used to hold parent object 
+
+
+**With and Without Inheritance**
+
+![Encapsulation](https://user-images.githubusercontent.com/67812755/116339307-d27cf800-a7fa-11eb-903a-6cf76a597da3.png)
+
+Total JAVA API is implemented based on inheritance concept. The most common method which are applicable for any java object are defined in object class. And hence every class in java is a child class of object either directly or indirectly so that object class method by default to every java class without rewriting due to this object class root for all java classes.
+Throwable defines the most common method which are required for every expection on error classes hence this class has root for java Exception hierarchy.
+
